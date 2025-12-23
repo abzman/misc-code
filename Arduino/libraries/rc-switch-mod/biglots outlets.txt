@@ -1,0 +1,89 @@
+per https://github.com/sui77/rc-switch/issues/187 use a branch of the repo that contains ProtocolAnalyzeDemo.ino to generate a new suggested timing protocol, then feed that back into the library
+
+
+
+1 ON
+Decimal: 13382 (15Bit) Binary: 011010001000110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11796,564,1820,1760,628,1764,632,564,1820,1760,632,560,1816,564,1820,564,1816,1764,632,560,1820,564,1816,564,1816,1764,632,1760,640,556,1820,
+
+1 OFF
+Decimal: 13350 (15Bit) Binary: 011010000100110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11796,564,1820,1760,636,1756,632,564,1820,1760,632,564,1820,560,1820,560,1820,564,1816,1768,628,560,1824,556,1824,1756,636,1760,636,556,1820,
+
+2 ON
+Decimal: 13334 (15Bit) Binary: 011010000010110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11796,568,1820,1760,628,1764,628,568,1816,1764,632,560,1820,564,1816,564,1820,560,1816,564,1816,1764,632,564,1816,1764,632,1760,632,564,1816,
+
+2 OFF
+Decimal: 13326 (15Bit) Binary: 011010000001110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11800,564,1816,1764,628,1764,632,564,1812,1768,628,568,1816,564,1816,564,1816,568,1816,564,1816,564,1816,1764,632,1764,628,1764,632,564,1816,
+
+3 ON
+Decimal: 13446 (15Bit) Binary: 011010010000110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11796,568,1812,1768,628,1768,632,560,1816,1768,632,568,1808,568,1812,1768,628,564,1816,568,1816,564,1816,568,1816,1764,628,1764,632,564,1816,
+
+3 OFF
+Decimal: 13574 (15Bit) Binary: 011010100000110 Tri-State: not applicable PulseLength: 842 microseconds Protocol: 5
+Raw data: 11796,568,1812,1772,624,1768,628,568,1812,1768,624,572,1812,1768,628,564,1820,564,1816,564,1816,568,1812,568,1816,1764,628,1768,624,572,1812,
+
+
+Received 13382 / 15bit Protocol: 1
+data bits of pulse train duration: 36000
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11840 
+660 1820 1768 632 1772 628 568 1820 1772 632 568 1820 568 1820 568 1824 
+1768 632 568 1820 568 1820 572 1820 1768 632 1772 628 568 1824 
+564
+====
+Received 13350 / 15bit Protocol: 1
+data bits of pulse train duration: 36000
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11836 
+656 1824 1768 632 1772 628 568 1820 1772 632 568 1824 564 1820 568 1824 
+568 1820 1772 628 568 1820 568 1824 1768 632 1772 632 564 1824 
+564
+====
+Received 13334 / 15bit Protocol: 1
+data bits of pulse train duration: 35996
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11836 
+656 1816 1776 632 1768 628 572 1820 1772 628 568 1820 572 1820 568 1820 
+568 1824 568 1820 1768 632 568 1820 1776 628 1768 628 572 1820 
+568
+====
+Received 13326 / 15bit Protocol: 1
+data bits of pulse train duration: 36000
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11832 
+656 1820 1772 632 1772 628 568 1824 1768 632 568 1824 564 1820 568 1824 
+568 1816 572 1820 568 1824 1768 628 1772 632 1772 628 568 1824 
+568
+====
+Received 13446 / 15bit Protocol: 1
+data bits of pulse train duration: 35992
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11832 
+656 1816 1776 628 1772 628 572 1820 1768 632 568 1824 564 1820 1772 628 
+572 1820 568 1824 564 1824 568 1820 1772 628 1772 632 564 1820 
+572
+====
+Received 13574 / 15bit Protocol: 1
+data bits of pulse train duration: 36004
+proposed protocol: { 599, { 1, 20 }, { 1, 3 }, { 3, 1 }, false }
+====
+first level down
+11836 
+660 1820 1768 632 1772 628 568 1820 1772 632 568 1820 1772 632 564 1820 
+572 1820 568 1824 564 1820 572 1820 1772 628 1772 632 568 1824 
+564
+====
